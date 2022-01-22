@@ -1,6 +1,17 @@
-import modul
-print("plik __name__ =", __name__)
 
-instacja = modul.Hack()
+class FirstClass:
+    # KONSTRUKTOR
+    def __init__(self, value):
+        self._data = value
+    def set_data(self, value):
+        self._data = value
+    def display(self):
+        print(self._data)
 
-instacja.hack_site("www.wp.pl")
+x = FirstClass("Król Artur")
+y = FirstClass("Anna karenina")
+
+print(dir(x))
+
+#x.set_data("kamil")
+x.display()
