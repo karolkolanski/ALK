@@ -7,3 +7,5 @@ print(result)
 
 result_extended= calc.add_extended(1,2,3)
 print(result_extended)
+
+calc.add_named(a=6, b=8)
